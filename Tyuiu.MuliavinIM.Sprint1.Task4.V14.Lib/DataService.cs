@@ -6,11 +6,12 @@ namespace Tyuiu.MuliavinIM.Sprint1.Task4.V14.Lib
     {
         public double Calculate(double x, double y)
         {
-            var b = Math.Sqrt(7 + Math.Abs(x - y));
-            var c = 3 * x * Math.Pow(y, 2);
-            var result = x / y;
-            
-            return Math.Round(result, 3);
+            var abs = Math.Abs(x - y);
+            var sqrt = Math.Sqrt(7 + abs);
+            var pow = 3 * x * Math.Pow(y, 2);
+            var res = sqrt / pow;
+
+            return Math.Round(res, 3);
         }
     }
 }

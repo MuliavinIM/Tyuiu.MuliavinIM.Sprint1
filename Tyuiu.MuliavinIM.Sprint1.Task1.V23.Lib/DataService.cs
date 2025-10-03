@@ -6,7 +6,8 @@ namespace Tyuiu.MuliavinIM.Sprint1.Task1.V23.Lib
     {
         public double Calculate(double a, double x)
         {
-            return (x * Math.PI) / (2 * a);
+            const double PI = 3.14;
+            return (x * PI) / (2 * a);
         }
     }
 }
